@@ -3,7 +3,7 @@ import './grid.css';
 import planets from './planets.png';
 import galaxy from './galaxy1.png';
 import solarsystem from './solarsystem1.png';
-const Grid = () =>
+const Grid = ({onModalChange}) =>
 {
 	return(   
            <div className='gridcontainer'>
@@ -33,7 +33,7 @@ const Grid = () =>
              </div>
              <div className='learn'>
                  <p className='signup'>Become a part of Uni-Verse</p>
-                 <button className='signUpButton'>Sign up</button>
+                 <button className='signUpButton' onClick={onModalChange}>Signup</button>
              </div>
            </div>
 		);
