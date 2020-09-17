@@ -16,9 +16,9 @@ class App extends Component
         };
     }
 
-onModalChange = () =>{
+onModalChange = (route) =>{
  
-     this.setState({route: 'open'});
+     this.setState({route: route});
 }
   render()
   {
@@ -26,7 +26,7 @@ onModalChange = () =>{
      return(
              <div className='container0'>
              <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet"/>
-                 <Signup route={this.state.route}/>
+                 <Signup onModalChange={this.onModalChange} route={this.state.route}/>
                  <Nav />
                 <Grid onModalChange={this.onModalChange}/>
                 <Footer />

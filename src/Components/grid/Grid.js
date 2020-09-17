@@ -33,7 +33,7 @@ const Grid = ({onModalChange}) =>
              </div>
              <div className='learn'>
                  <p className='signup'>Become a part of Uni-Verse</p>
-                 <button className='signUpButton' onClick={onModalChange}>Signup</button>
+                 <button className='signUpButton' onClick={() => onModalChange('open')}>Signup</button>
              </div>
            </div>
 		);

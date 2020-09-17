@@ -1,13 +1,13 @@
 import React from 'react';
 import './signup.css';
-const Signup = ({ route }) =>
+const Signup = ({ route, onModalChange }) =>
 {  
 	 if(route === 'open')
 	 {
 	 	return(
   <div className="container1">
     <main className=" container2 ">
-      <button className='xbutton dim'>X</button>
+      <button onClick={() => onModalChange('closed')} className='xbutton dim'>X</button>
     <p className='textsignup'>Sign Up</p>
       <label className='email' htmlFor='email-address'>Email</label>
       <input className='emailbar input-reset hover-bg-white hover-black ' type='email'/>

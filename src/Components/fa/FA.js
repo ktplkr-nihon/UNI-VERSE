@@ -12,10 +12,11 @@ const FA = () =>
   </Dropdown.Toggle>
 
   <Dropdown.Menu className='dropmenu'>
-    <Dropdown.Item className='text1' href="#">Home</Dropdown.Item><br/>
-    <Dropdown.Item className='text1' href="#">Community</Dropdown.Item><br/>
-    <Dropdown.Item className='text1' href="#">Contact us</Dropdown.Item><br/>
-    <Dropdown.Item className='text1' href="#">About</Dropdown.Item>
+    <Dropdown.Item className='text1 dim' href="#">Home</Dropdown.Item><br/>
+    <Dropdown.Item className='text1 dim' href="#">Community</Dropdown.Item><br/>
+    <Dropdown.Item className='text1 dim' href="#">Explore</Dropdown.Item><br/>
+    <Dropdown.Item className='text1 dim' href="#">Contact us</Dropdown.Item><br/>
+    <Dropdown.Item className='text1 dim' href="#">About</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 		);

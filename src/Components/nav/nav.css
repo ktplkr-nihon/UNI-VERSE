@@ -3,7 +3,7 @@
 	height: 9vh;
 	display: grid;
 	grid-template-rows: 8vh;
-	grid-template-columns: repeat(5,1fr);
+	grid-template-columns: repeat(6,1fr);
 	width: 100%;
 	position: fixed;
 	z-index: 1;
@@ -26,10 +26,24 @@ a{
 	text-decoration: none;
 	transition: 1s;
 	font-weight: bold;
-	text-overflow: 
+	
 	
 
 }
+.d1{
+	
+	color: white;
+	margin:5px;
+	place-self: center;
+	font-size: 1em;
+	text-decoration: none;
+	transition: 1s;
+	cursor: default;
+	font-size: 1.15vw;
+	
+}
+
+
 
 @media only screen and (max-width: 1510px )
 {
@@ -51,6 +65,10 @@ a{
 	place-self: center;
     
 }
+} .d1:hover {
+  
+  transform: scale(1.01);
+  color: rgb(13, 169, 222);
 }
 
 
@@ -64,6 +82,9 @@ a{
 .a1{
 	display: none;
 
+}
+.dropbtn{
+	display: none;
 }
 .logo{
 	height: 4vw;
@@ -129,4 +150,60 @@ a{
  padding-right: 0.3vh;
  cursor: default;
 }
+}
+.dropbtn {
+  background-color: black;
+  color: white;
+  font-size: 1.15vw;
+  border: none;
+  cursor: default;
+  transition: 1s;
+  font-weight: bold;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  grid-row: 1/2;
+  grid-column: 5/6;
+  align-self: center;
+  justify-self:center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+ .dropbtn:hover {
+  
+  transform: scale(1.01);
+  color: rgb(13, 169, 222);
 }
