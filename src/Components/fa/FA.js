@@ -14,7 +14,7 @@ const FA = () =>
   <Dropdown.Menu className='dropmenu'>
     <Dropdown.Item className='text1 dim' href="#">Home</Dropdown.Item><br/>
     <Dropdown.Item className='text1 dim' href="#">Community</Dropdown.Item><br/>
-    <Dropdown.Item className='text1 dim' href="#">Explore</Dropdown.Item><br/>
+    <Dropdown.Item className='text12 dim' >Explore</Dropdown.Item><br/>
     <Dropdown.Item className='text1 dim' href="#">Contact us</Dropdown.Item><br/>
     <Dropdown.Item className='text1 dim' href="#">About</Dropdown.Item>
   </Dropdown.Menu>

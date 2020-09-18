@@ -12,7 +12,7 @@ class App extends Component
     {
       super();
       this.state={
-         route:'closed'
+         route:'closed' 
         };
     }
 
@@ -20,6 +20,7 @@ onModalChange = (route) =>{
  
      this.setState({route: route});
 }
+
   render()
   {
 
@@ -27,7 +28,7 @@ onModalChange = (route) =>{
              <div className='container0'>
              <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet"/>
                  <Signup onModalChange={this.onModalChange} route={this.state.route}/>
-                 <Nav />
+                 <Nav  />
                 <Grid onModalChange={this.onModalChange}/>
                 <Footer />
              </div>

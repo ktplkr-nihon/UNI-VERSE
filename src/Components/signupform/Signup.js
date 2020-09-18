@@ -16,7 +16,7 @@ const Signup = ({ route, onModalChange }) =>
       <label className="checkbox"><input className='checkbox1' type="checkbox"/> Remember me</label> 
       <button class=" signbutton1 grow pointer">Sign up</button>
        <div className="pop">
-      <a href="#0" className="pop1 link dim white db">Sign up</a>
+      <a href="#0" className="pop1 link dim white db">Sign in</a>
       <a href="#0" className="pop2 link dim white db">Forgot your password?</a>
     </div> 
 </main>

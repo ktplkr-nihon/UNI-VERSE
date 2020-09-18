@@ -23,9 +23,14 @@
 	width: 35vh;
 	display: inline-block;
 	text-align: center;
+	position: fixed;
 }
 
 .text1{
+	     font-size: 1em;
+	     line-height: 60px;
+	}
+	.text12{
 	     font-size: 1em;
 	     line-height: 60px;
 	}
@@ -39,5 +44,6 @@
 	 place-self: end;
 	 align-self: center;
 	 display: flex;
+ 
 }
 }
