@@ -21,8 +21,8 @@
 	background-color: black;
 	height: 100vh;
 	width: 35vh;
-	display: inline-block;
-	text-align: center;
+	display: grid;
+	grid-template-rows: repeat(5,1fr);
 	position: fixed;
 }
 
@@ -46,4 +46,38 @@
 	 display: flex;
  
 }
+}
+.content-1{
+	background-color: black;
+	border:none;
+	outline: none;
+	grid-row: 3/4;
+}
+.explore{
+	color: white;
+}
+.explore-2{
+	display: grid;
+	grid-template-rows: repeat(3,1fr);
+}
+.item-1{
+	grid-row: 1/2;
+}
+.item-2{
+	grid-row: 2/3;
+}
+.item-3{
+	grid-row: 4/5;
+}
+.item-4{
+	grid-row: 5/6;
+}
+.a-1{
+	grid-row: 1/2;
+}
+.a-2{
+	grid-row: 2/3;
+}
+.a-3{
+	grid-row: 3/4;
 }

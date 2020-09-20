@@ -5,7 +5,18 @@ import logo2 from './logo2.png';
 
 class Nav extends Component
 { 
-
+  constructor(){
+    super();
+    this.state = {
+      content:false
+    } 
+  }
+  show = () =>{
+    this.setState({content: true});
+  }
+  close = () =>{
+    this.setState({content: false});
+  }
  render()
   {
    return(  
@@ -24,7 +35,7 @@ class Nav extends Component
   </div>
 </div>
            <a className='a1'href='#'>CONTACT US</a>
-           <FA explore={this.explore} onExploreClick={this.onExploreClick}/>
+           <FA close={this.close} show={this.show} content={this.state.content}/>
            </div>
         
    	);
