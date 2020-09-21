@@ -6,6 +6,7 @@ const Signup = ({ route, onModalChange }) =>
 	 {
 	 	return(
   <div className="container1">
+   <div className='exitcontainer' onClick={() => onModalChange('closed')}></div>
     <main className=" container2 ">
       <button onClick={() => onModalChange('closed')} className='xbutton dim'>X</button>
     <p className='textsignup'>Sign Up</p>

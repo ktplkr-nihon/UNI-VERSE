@@ -5,7 +5,7 @@ import logo2 from './logo2.png';
 
 class Nav extends Component
 { 
-  constructor(){
+  constructor(props){
     super();
     this.state = {
       content:false
@@ -22,20 +22,20 @@ class Nav extends Component
    return(  
            <div className='nav'>
            <img className='logo' alt='logo' src={logo2} />
-           <a className='a1' href='#'>HOME</a>
-           <a className='a1'href='#'>COMMUNITY</a>
-           <a className='a1'href='#'>ABOUT</a>
+           <a className='a1'onClick={() => this.props.onNavClick('home')}>HOME</a>
+           <a className='a1'onClick={() => this.props.onNavClick('community')}>COMMUNITY</a>
+           <a className='a1'onClick={() => this.props.onNavClick('about')}>ABOUT</a>
           <div class="dropdown">
   
-  <button class="dropbtn">EXPLORE</button>
+  <button class="dropbtn"onClick={() => this.props.onNavClick('explore')}>EXPLORE</button>
   <div class="dropdown-content">
     <a href="#">PLANET</a>
     <a href="#">GALAXIES</a>
     <a href="#">BLACKHOLE</a>
   </div>
 </div>
-           <a className='a1'href='#'>CONTACT US</a>
-           <FA close={this.close} show={this.show} content={this.state.content}/>
+           <a className='a1'onClick={() => this.props.onNavClick('contact')}>CONTACT US</a>
+           <FA onNavClick={this.props.onNavClick} close={this.close} show={this.show} content={this.state.content}/>
            </div>
         
    	);

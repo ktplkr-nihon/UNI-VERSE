@@ -5,7 +5,7 @@ import {Collapse} from 'react-collapse';
 import {UnmountClosed} from 'react-collapse';
 import fa from './fa.png';
 
-const FA = ({content, show ,close}) =>
+const FA = ({content, show ,close, onNavClick}) =>
 {
 	return(
           <Dropdown className='fa'>
@@ -14,10 +14,10 @@ const FA = ({content, show ,close}) =>
   </Dropdown.Toggle>
 
   <Dropdown.Menu className='dropmenu'>
-    <Dropdown.Item className='text1 item-1 dim' href="#">Home</Dropdown.Item><br/>
-    <Dropdown.Item className='text1 item-2 dim' href="#">Community</Dropdown.Item><br/>
+    <Dropdown.Item className='text1 item-1 dim' onClick={() => onNavClick('home')}>Home</Dropdown.Item><br/>
+    <Dropdown.Item className='text1 item-2 dim' onClick={() => onNavClick('community')}>Community</Dropdown.Item><br/>
     <button className='content-1' onClick={ content === false ? show : close }>
-    <p className='explore dim'>Explore</p>
+    <p className='explore dim' onClick={() => onNavClick('explore')}>Explore</p>
     { content === true?
       <div className='explore-2'>
         <a href='#' className='a-1 dim'>Planets</a>
@@ -26,8 +26,8 @@ const FA = ({content, show ,close}) =>
       </div>:<div></div>
     }
     </button>
-    <Dropdown.Item className='text1 item-3 dim' href="#">Contact us</Dropdown.Item><br/>
-    <Dropdown.Item className='text1 item-4 dim' href="#">About</Dropdown.Item>
+    <Dropdown.Item className='text1 item-3 dim'  onClick={() => onNavClick('contact')}>Contact us</Dropdown.Item><br/>
+    <Dropdown.Item className='text1 item-4 dim'  onClick={() => onNavClick('about')}>About</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
 		);

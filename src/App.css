@@ -22,3 +22,7 @@ body,html {
 	grid-template-rows: 8vh 1fr 1fr 8em;
 	grid-template-columns: 1fr; 
 }
+
+a{
+	cursor:default;
+}
