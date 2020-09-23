@@ -5,6 +5,7 @@ import Footer from './Components/footer/Footer.js';
 import Grid from './Components/grid/Grid.js';
 import Signup from './Components/signupform/Signup.js';
 import Community from './Components/community/Community.js';
+import About from './Components/about/About.js';
 class App extends Component
 {
 
@@ -13,7 +14,7 @@ class App extends Component
       super();
       this.state={
          route:'closed',
-         navroute:'home' 
+         navroute:'about' 
         };
     }
 
@@ -33,7 +34,7 @@ onNavSelect = () =>
                  
                     case 'about':
                     console.log('about');
-                          return(<div>about</div>);
+                          return(<About />);
 
                     case 'explore':
                     console.log('explore');
