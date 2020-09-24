@@ -1,0 +1,17 @@
+.contact-container{
+	grid-row: 2/4;
+	background-color:white;
+	text-align: center;
+}
+.contact-heading{
+	font-size: 5vw;
+}
+.number{
+	cursor: default;
+}
+.email-contact{
+	cursor: default;
+}
+.universe2{
+	height: 5vw;
+}

@@ -1,0 +1,22 @@
+.aboutcontainer{
+	grid-row:2/4;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+.abouthead{
+	color: white;
+}
+.mypic{
+	height: 20vw;
+	border: black solid 5px;
+}
+.myself{
+	color: white;
+}
+@media only screen and (max-width: 1024px) {
+ 
+ .myself{
+	color: white;
+	font-size: 3vw;
+}
+}

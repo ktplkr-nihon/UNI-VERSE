@@ -6,6 +6,7 @@ import Grid from './Components/grid/Grid.js';
 import Signup from './Components/signupform/Signup.js';
 import Community from './Components/community/Community.js';
 import About from './Components/about/About.js';
+import Contact from './Components/contact/Contact.js';
 class App extends Component
 {
 
@@ -14,7 +15,7 @@ class App extends Component
       super();
       this.state={
          route:'closed',
-         navroute:'about' 
+         navroute:'home' 
         };
     }
 
@@ -42,7 +43,7 @@ onNavSelect = () =>
 
                     case 'contact':
                     console.log('contact');
-                          return(<div>contact</div>);
+                          return(<Contact />);
 
                     default: 
                     console.log('home');
