@@ -5,7 +5,7 @@ import {Collapse} from 'react-collapse';
 import {UnmountClosed} from 'react-collapse';
 import fa from './fa.png';
 
-const FA = ({content, show ,close, onNavClick}) =>
+const FA = ({content, show ,close, onNavClick, onExploreClick}) =>
 {
 	return(
           <Dropdown className='fa'>
@@ -17,12 +17,12 @@ const FA = ({content, show ,close, onNavClick}) =>
     <Dropdown.Item className='text1 item-1 dim' onClick={() => onNavClick('home')}>Home</Dropdown.Item><br/>
     <Dropdown.Item className='text1 item-2 dim' onClick={() => onNavClick('community')}>Community</Dropdown.Item><br/>
     <button className='content-1' onClick={ content === false ? show : close }>
-    <p className='explore dim' onClick={() => onNavClick('explore')}>Explore</p>
+    <p className='explore dim' >Explore</p>
     { content === true?
       <div className='explore-2'>
-        <a href='#' className='a-1 dim'>Planets</a>
-        <a href='#' className='a-2 dim'>Glaxies</a>
-        <a href='#' className='a-3 dim'>Blackhole</a>
+        <a onClick={() => onNavClick('planets')} className='a-1 dim'>Planets</a>
+        <a onClick={() => onNavClick('galaxies')} className='a-2 dim'>Glaxies</a>
+        <a onClick={() => onNavClick('blackhole')} className='a-3 dim'>Blackhole</a>
       </div>:<div></div>
     }
     </button>

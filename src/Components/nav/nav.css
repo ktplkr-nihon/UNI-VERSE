@@ -209,3 +209,6 @@ a{
   transform: scale(1.01);
   color: rgb(13, 169, 222);
 }
+.navlocator{
+	border-bottom: white 5px solid;
+}

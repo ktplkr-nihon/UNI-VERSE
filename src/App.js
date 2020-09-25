@@ -7,6 +7,7 @@ import Signup from './Components/signupform/Signup.js';
 import Community from './Components/community/Community.js';
 import About from './Components/about/About.js';
 import Contact from './Components/contact/Contact.js';
+import Planets from './Components/planets/Planets.js';
 class App extends Component
 {
 
@@ -15,7 +16,7 @@ class App extends Component
       super();
       this.state={
          route:'closed',
-         navroute:'home' 
+         navroute:'home'
         };
     }
 
@@ -37,15 +38,21 @@ onNavSelect = () =>
                     console.log('about');
                           return(<About />);
 
-                    case 'explore':
-                    console.log('explore');
-                          return(<div>explore</div>);
+                    case 'planets':
+                        console.log('planets');
+                            return(<Planets />);
+                        
+                    case 'galaxies':
+                            return(<div>ok</div>);
+
+                    case 'blackhole':
+                            return(<div>ok</div>);
 
                     case 'contact':
                     console.log('contact');
                           return(<Contact />);
 
-                    default: 
+                    default :
                     console.log('home');
                           return(<Grid onModalChange={this.onModalChange}/>); 
 }
@@ -57,7 +64,7 @@ onNavSelect = () =>
              <div className='container0'>
              <link href="https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap" rel="stylesheet"/>
                  <Signup onModalChange={this.onModalChange} route={this.state.route}/>
-                 <Nav onNavClick={this.onNavClick} />
+                 <Nav onNavClick={this.onNavClick} navroute={this.state.navroute} />
                  {this.onNavSelect()}
                 <Footer />
              </div>
