@@ -8,6 +8,7 @@ import Community from './Components/community/Community.js';
 import About from './Components/about/About.js';
 import Contact from './Components/contact/Contact.js';
 import Planets from './Components/planets/Planets.js';
+import Galaxies from './Components/galaxies/Galaxies.js';
 class App extends Component
 {
 
@@ -43,7 +44,7 @@ onNavSelect = () =>
                             return(<Planets />);
                         
                     case 'galaxies':
-                            return(<div>ok</div>);
+                            return(<Galaxies />);
 
                     case 'blackhole':
                             return(<div>ok</div>);
