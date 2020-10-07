@@ -1,0 +1,81 @@
+.b-container{
+	grid-row: 2/4;
+	display: grid;
+	grid-template-rows: 1fr 55vw;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 2vw;
+}
+.about-b{
+	background-color: black;
+	grid-row: 1/2;
+	grid-column: 1/4;
+	width: 70%;
+    justify-self:center;
+    text-align: center;
+    margin-top: 6vw;
+}
+.b-image{
+	margin-top: 10vh;
+	height: 25vw;
+	width: 70%;
+}
+.b-title{
+	color: white;
+	font-size: 3vw;
+}
+.b-info{
+	font-size: 1vw;
+	color: white;
+	line-height: 2em;
+	margin-right: 5vw;
+	margin-left: 5vw;
+	padding-bottom: 2vw;
+}
+.b-2{
+	background-color: black;
+	grid-row: 2/3;
+	grid-column: 1/2;
+	width: 70%;
+	height: 50vw;
+	justify-self: end;
+	margin-bottom: 2vw;
+	text-align: center;
+}
+.b-3{
+	width: 70%;
+	margin-bottom: 2vw;
+	background-color: black;
+	text-align: center;
+}
+
+.facts{
+	color: white;
+	font-size: 2vw;
+}
+.b-1{
+	color: white;
+}
+.b-1{
+
+	font-size: 1.3vw;
+	line-height:3vw; 
+	margin-right: 1vw;
+	margin-left: 1vw;
+}
+
+.rblackhole:hover{
+	transition: 1s;
+    transform: scale(1.1);
+    border: white solid 2px;
+}
+.real{
+	color: white;
+	font-size: 3vw;
+	font-weight: bold;
+}
+.ablackhole{
+	cursor: pointer;
+}
+.ablackhole:hover{
+	color:red;
+}

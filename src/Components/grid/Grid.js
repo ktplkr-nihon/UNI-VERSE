@@ -3,7 +3,7 @@ import './grid.css';
 import planets from './planets.png';
 import galaxy from './galaxy1.png';
 import solarsystem from './solarsystem1.png';
-const Grid = ({onModalChange}) =>
+const Grid = ({onModalChange, onNavClick, navroute}) =>
 {
 	return(   
            <div className='gridcontainer'>
@@ -12,19 +12,19 @@ const Grid = ({onModalChange}) =>
                <p className='question'> EXPLORE THE UNIVERSE </p>
              </div> 
              <div className='info'>
-               <a className='p' href='#'>
+               <a onClick={() => onNavClick('planets')} className='p' href='#'>
                  <img className='planets' alt='planets' src={planets}/>
                  <div className="overlay">
                     <div className="text">PLANETS</div>
                  </div>
                </a>
-               <a className='g' href='#'>
+               <a onClick={() => onNavClick('galaxies')} className='g' href='#'>
                  <img className='galaxy' alt='galaxy' src={galaxy}/>
                  <div className="overlay">
                     <div className="text">GALAXIES</div>
                  </div>
                </a>
-               <a className='s' href='#'>
+               <a onClick={() => onNavClick('blackhole')} className='s' href='#'>
                  <img className='solarsystem' alt='solarsystem' src={solarsystem}/>
                  <div className="overlay">
                     <div class="text">BLACKHOLE</div>

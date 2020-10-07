@@ -9,6 +9,7 @@ import About from './Components/about/About.js';
 import Contact from './Components/contact/Contact.js';
 import Planets from './Components/planets/Planets.js';
 import Galaxies from './Components/galaxies/Galaxies.js';
+import Blackhole from './Components/blackhole/Blackhole.js';
 class App extends Component
 {
 
@@ -47,7 +48,7 @@ onNavSelect = () =>
                             return(<Galaxies />);
 
                     case 'blackhole':
-                            return(<div>ok</div>);
+                            return(<Blackhole />);
 
                     case 'contact':
                     console.log('contact');
@@ -55,7 +56,7 @@ onNavSelect = () =>
 
                     default :
                     console.log('home');
-                          return(<Grid onModalChange={this.onModalChange}/>); 
+                          return(<Grid onNavClick={this.onNavClick} navroute={this.state.navroute} onModalChange={this.onModalChange}/>); 
 }
 }
   render()
