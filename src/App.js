@@ -41,7 +41,7 @@ onNavSelect = () =>
                           return(<About />);
 
                     case 'planets':
-                        console.log('planets');
+                        console.log('planet');
                             return(<Planets />);
                         
                     case 'galaxies':
